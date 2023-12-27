@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./assets/css/style.css" />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Roboto"
+    />
+    <title>mwst-calc-js</title>
+  </head>
+  <div>
+    <h1>Täglicher Kalorienbedarf-Rechner</h1>
+    <section>
+    <form>
+    <div>
+        <div id="calcMethod">
+          <h2>Geschlecht</h2>
+          <input type="radio" name="sex" id="male" />
+          <label for="male">männlich</label>
+          <input type="radio" name="sex" id="female" checked />
+          <label for="female">weiblich</label>
+        </div>
+        <div id="age">
+          <h2>Alter</h2>
+          <input
+            type="number"
+            name="ageVal"
+            id="ageVal"
+            placeholder="Alter in Jahren"
+          />
+        </div>
+        <div id="height">
+          <h2>Größe</h2>
+          <input type="number" name="heightVal" id="heightVal"
+          placeholder="Größe in cm"
+        >
+        </div>
+        <div id="weight">
+          <h2>Gewicht</h2>
+          <input
+            type="number"
+            name="weightVal"
+            id="weightVal"
+            placeholder="Gewicht in kg"
+          />
+        </div>
+        <div id="palLevel">
+          <h2>Tätigkeit</h2>
+          <div>
+            <select name="palLevel" id="palLevelSelect">
+              <option value="1.2">
+                Sitzend (kein Training / Bürojob)
+              </option>
+              <option value="1.375">
+                Leichtes Training (1-3x in der Woche)
+              </option>
+              <option value="1.55">
+                Moderates Training (3-5x in der Woche)
+              </option>
+              <option value="1.725">
+                Sehr aktives Training (6-7x in der Woche)
+              </option>
+              <option value="1.9">
+                Extra aktives Training (täglich + körperlicher Job)
+              </option>
+            </select>
+          </div>
+        </div>
+        <div id="calculate">
+          <button id="calcButton">Berechnen</button>
+        </div>
+    </div>
+      <div id="result">
+        <h3>Ergebnis</h3>
+        <h3>Grundumsatz</h3>
+        <div id="resultValue"></div>
+        <h3>Gesamtumsatz (inkl. Berücksichtung der Aktivität)</h3>
+        <div id="resultValuePal"></div>
+      </div>
+    </div>
+    </form>
+</section>
+    <script src="./assets/js/main.js"></script>
+  </body>
+</html>

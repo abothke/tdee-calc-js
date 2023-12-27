@@ -1,0 +1,113 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Roboto", sans-serif;
+}
+
+body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 10px;
+  background: linear-gradient(to right, #161a30, #31304d);
+  color: #31304d;
+  font-size: 1rem;
+}
+
+h1,
+button {
+  color: white;
+  font-size: 2em;
+}
+
+h1 {
+  margin-top: 2em;
+}
+
+h3 {
+  font-size: 1em;
+}
+
+section {
+  width: 100%;
+  max-width: 500px;
+  height: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  border-radius: 10px;
+  padding: 2em;
+  margin-top: 2em;
+}
+
+section:nth-of-type(1) {
+  background: #f0ece5;
+}
+
+form,
+div,
+#result {
+  width: 95%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 15px;
+  text-align: center;
+}
+
+#calcMethod {
+  flex-direction: row;
+}
+
+label,
+#female,
+#male {
+  margin-bottom: 5px;
+  font-weight: bold;
+}
+
+#female,
+#male {
+  height: 20px;
+}
+
+input,
+select {
+  width: 100%;
+  height: 50px;
+  border-radius: 10px;
+  border: 1px solid #ccc;
+  padding: 0 15px;
+  font-size: 16px;
+}
+
+input:focus {
+  outline: none;
+  border-color: #ff416c;
+}
+
+button {
+  background: linear-gradient(to right, #161a30, #31304d);
+  border-radius: 10px;
+  border: 0;
+  height: 50px;
+  width: 100%;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+button:hover {
+  background: linear-gradient(to right, #31304d, #161a30);
+}
+
+button:focus {
+  outline: none;
+}
+
+button:active {
+  transform: scale(0.98);
+}
