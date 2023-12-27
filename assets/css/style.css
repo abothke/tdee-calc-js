@@ -70,11 +70,6 @@ label,
   font-weight: bold;
 }
 
-#female,
-#male {
-  height: 20px;
-}
-
 input,
 select {
   width: 100%;
@@ -110,4 +105,9 @@ button:focus {
 
 button:active {
   transform: scale(0.98);
+}
+
+#female,
+#male {
+  height: 20px;
 }
