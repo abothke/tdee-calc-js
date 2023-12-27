@@ -61,6 +61,7 @@ div,
 
 #calcMethod {
   flex-direction: row;
+  max-width: 100%;
 }
 
 label,
